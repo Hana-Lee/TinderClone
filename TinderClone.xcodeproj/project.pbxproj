@@ -16,6 +16,12 @@
 		B76DB9CB1B12338F006BEB9D /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9C81B12338F006BEB9D /* FBSDKCoreKit.framework */; };
 		B76DB9CC1B12338F006BEB9D /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9C91B12338F006BEB9D /* FBSDKLoginKit.framework */; };
 		B76DB9CD1B12338F006BEB9D /* FBSDKShareKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9CA1B12338F006BEB9D /* FBSDKShareKit.framework */; };
+		B76DB9D91B123537006BEB9D /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9D31B123537006BEB9D /* Bolts.framework */; };
+		B76DB9DA1B123537006BEB9D /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9D41B123537006BEB9D /* Parse.framework */; };
+		B76DB9DB1B123537006BEB9D /* ParseCrashReporting.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9D51B123537006BEB9D /* ParseCrashReporting.framework */; };
+		B76DB9DC1B123537006BEB9D /* ParseFacebookUtils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9D61B123537006BEB9D /* ParseFacebookUtils.framework */; };
+		B76DB9DD1B123537006BEB9D /* ParseFacebookUtilsV4.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9D71B123537006BEB9D /* ParseFacebookUtilsV4.framework */; };
+		B76DB9DE1B123537006BEB9D /* ParseUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76DB9D81B123537006BEB9D /* ParseUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +49,12 @@
 		B76DB9C91B12338F006BEB9D /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKLoginKit.framework; path = ../FBSDKLoginKit.framework; sourceTree = "<group>"; };
 		B76DB9CA1B12338F006BEB9D /* FBSDKShareKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FBSDKShareKit.framework; path = ../FBSDKShareKit.framework; sourceTree = "<group>"; };
 		B76DB9CF1B12342A006BEB9D /* TinderClone-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TinderClone-Bridging-Header.h"; sourceTree = "<group>"; };
+		B76DB9D31B123537006BEB9D /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
+		B76DB9D41B123537006BEB9D /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		B76DB9D51B123537006BEB9D /* ParseCrashReporting.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseCrashReporting.framework; sourceTree = "<group>"; };
+		B76DB9D61B123537006BEB9D /* ParseFacebookUtils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtils.framework; sourceTree = "<group>"; };
+		B76DB9D71B123537006BEB9D /* ParseFacebookUtilsV4.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseFacebookUtilsV4.framework; sourceTree = "<group>"; };
+		B76DB9D81B123537006BEB9D /* ParseUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ParseUI.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,9 +62,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76DB9DE1B123537006BEB9D /* ParseUI.framework in Frameworks */,
+				B76DB9DC1B123537006BEB9D /* ParseFacebookUtils.framework in Frameworks */,
 				B76DB9CC1B12338F006BEB9D /* FBSDKLoginKit.framework in Frameworks */,
+				B76DB9DD1B123537006BEB9D /* ParseFacebookUtilsV4.framework in Frameworks */,
+				B76DB9DB1B123537006BEB9D /* ParseCrashReporting.framework in Frameworks */,
 				B76DB9CB1B12338F006BEB9D /* FBSDKCoreKit.framework in Frameworks */,
 				B76DB9CD1B12338F006BEB9D /* FBSDKShareKit.framework in Frameworks */,
+				B76DB9D91B123537006BEB9D /* Bolts.framework in Frameworks */,
+				B76DB9DA1B123537006BEB9D /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +105,7 @@
 		B76DB9A41B1232ED006BEB9D /* TinderClone */ = {
 			isa = PBXGroup;
 			children = (
+				B76DB9D21B123537006BEB9D /* Parse-iOS-1.7.4 */,
 				B76DB9CE1B1233B1006BEB9D /* Facebook Libraries */,
 				B76DB9A71B1232ED006BEB9D /* AppDelegate.swift */,
 				B76DB9A91B1232ED006BEB9D /* ViewController.swift */,
@@ -132,6 +151,19 @@
 				B76DB9CA1B12338F006BEB9D /* FBSDKShareKit.framework */,
 			);
 			name = "Facebook Libraries";
+			sourceTree = "<group>";
+		};
+		B76DB9D21B123537006BEB9D /* Parse-iOS-1.7.4 */ = {
+			isa = PBXGroup;
+			children = (
+				B76DB9D31B123537006BEB9D /* Bolts.framework */,
+				B76DB9D41B123537006BEB9D /* Parse.framework */,
+				B76DB9D51B123537006BEB9D /* ParseCrashReporting.framework */,
+				B76DB9D61B123537006BEB9D /* ParseFacebookUtils.framework */,
+				B76DB9D71B123537006BEB9D /* ParseFacebookUtilsV4.framework */,
+				B76DB9D81B123537006BEB9D /* ParseUI.framework */,
+			);
+			path = "Parse-iOS-1.7.4";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -366,6 +398,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TinderClone/Parse-iOS-1.7.4",
 				);
 				INFOPLIST_FILE = TinderClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -383,6 +416,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/TinderClone/Parse-iOS-1.7.4",
 				);
 				INFOPLIST_FILE = TinderClone/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
